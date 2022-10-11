@@ -1,13 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.scss'
+import { useContext } from 'react';
+import { AppContext } from './AppContext';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const { siteName } = useContext(AppContext);
   return (
     <div className="App">
-      <h1>Spanish Verb Quiz</h1>
+      <h1>{siteName}</h1>
       <p>testing</p>
     </div>
   )
