@@ -3,11 +3,11 @@ import { useContext } from 'react';
 import { AppContext } from './AppContext';
 
 function App() {
-  const { siteName } = useContext(AppContext);
+  const { siteName, unstructuredSpanishVerbs } = useContext(AppContext);
   return (
     <div className="App">
       <h1>{siteName}</h1>
-      <p>testing</p>
+      <p>unstructured spanish verbs: {unstructuredSpanishVerbs.length}</p>
     </div>
   )
 }
